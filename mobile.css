@@ -15,6 +15,7 @@ html, body {
 }
 div#component {
     width: 100%;
+    height: 100%;
 }
 
 div#result {
@@ -23,6 +24,7 @@ div#result {
     align-items: center;
     justify-content: center;
     text-align: center;
+
     padding:10px;
     background-image:linear-gradient(to top, hsl(241, 81%, 54%),hsl(252, 100%, 67%) );
     border-radius: 0px 0px 20px 20px;
@@ -30,14 +32,14 @@ div#result {
 
 div#result > p {
     color: rgba(255, 255, 255, 0.651);
-    font-size: 25px;
+    font-size: 18px;
     padding-bottom: 10px;
 
 }
 
 div#result > p#Gletter {
     color: white;
-    font-size: 25px;
+    font-size: 18px;
     font-weight: light;
     padding: 10px;
 } 
@@ -91,7 +93,7 @@ div#summary p {
 }
 
 div#summary .score {
-    color: gray;
+    color: rgba(128, 128, 128, 0.651);
 }
  
 div#summary div#reaction {
@@ -99,7 +101,8 @@ div#summary div#reaction {
     border-radius: 8px;
     margin-top: 20px;
     display: flex;
-    justify-content:space-around;
+    justify-content: space-between;
+
 
 }
 #reaction p {
@@ -110,7 +113,7 @@ div#summary div#memory {
     background-color: rgba(250, 235, 215, 0.651);
     border-radius: 8px;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     margin-top: 20px;
 
 }
@@ -122,7 +125,7 @@ div#summary div#verbal {
     background-color: rgba(250, 235, 215, 0.651);
     border-radius: 8px;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     margin-top: 20px;
 
 }
@@ -134,7 +137,7 @@ div#summary div#visual {
     background-color: rgba(250, 235, 215, 0.651);
     border-radius: 8px;
     display: flex;
-    justify-content:space-around;
+    justify-content:space-between;
     margin-top: 20px;
 
 }
@@ -156,4 +159,14 @@ button {
 
 button:hover {
     background-color:rgb(29, 29, 65);
+}
+
+span.strong {
+    color: black;
+    font-weight: bolder;
+}
+
+span.name {
+    display: flex;
+    padding-left: 10px;
 }
